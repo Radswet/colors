@@ -8,6 +8,9 @@ router.get("/", ({ response }) => {
   response.body = "Hello World";
 });
 
-router.get("colors", indexController.getColors);
+router.get("/colors", indexController.getColors);
+
+router.post("/color", indexController.createColor);
+
 
 export default router;
