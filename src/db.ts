@@ -6,7 +6,7 @@ const client = await new Client().connect({
   hostname: Deno.env.get("host"),
   username: Deno.env.get("username"),
   db: Deno.env.get("database"),
-  password: Deno.env.get("password"),
+  password: Deno.env.get("password")
 });
 
 export default client;

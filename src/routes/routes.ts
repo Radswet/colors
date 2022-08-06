@@ -9,9 +9,9 @@ const router = new Router();
 
 router
   .get("/colors", getColors)
-  .get("/colors/:id", getColor)
-  .post("/colors", addColor)
-  .delete("/colors/:id", deleteColor)
-  .put("/colors/:id", updateColor);
+  .get("/color/:id", getColor)
+  .post("/color", addColor)
+  .delete("/color/:id", deleteColor)
+  .put("/color/:id", updateColor);
 
 export default router;
