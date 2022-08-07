@@ -1,17 +1,8 @@
-CREATE DATABASE dbcolors;
-
-USE dbcolors;
-
-CREATE TABLE color (
-  id int(11) NOT NULL AUTO_INCREMENT,
-  name varchar(100) NOT NULL,
-  hex varchar(50) NOT NULL,
-  created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (id)
+-- table tasks
+CREATE TABLE tasks (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(200) NOT NULL,
+    description VARCHAR(300),
+    done BOOLEAN NOT NULL DEFAULT 0,
+    createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
-
-DESCRIBE color;
-
-INSERT INTO color(name, country) VALUES ('Blanco', '#ffffff'), ('Negro', '#000000');
-
-select * from color;
