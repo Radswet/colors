@@ -4,7 +4,7 @@ const typeDefs = gql`
   type Color {
     id: ID
     title: String
-    description: String
+    code: String
   }
   type Query {
     hello: String
@@ -13,7 +13,7 @@ const typeDefs = gql`
   }
   input ColorInput {
     title: String
-    description: String
+    code: String
   }
   type Mutation {
     createColor(task: ColorInput): Color
