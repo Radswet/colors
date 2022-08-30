@@ -1,13 +1,13 @@
 const { Schema, model } = require("mongoose");
 
-const taskSchema = new Schema({
+const colorSchema = new Schema({
   title: {
     type: String,
     required: true,
   },
-  description: {
+  code: {
     type: String,
   },
 });
 
-module.exports = model("Task", taskSchema);
+module.exports = model("Color", colorSchema);
