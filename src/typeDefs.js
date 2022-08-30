@@ -16,9 +16,9 @@ const typeDefs = gql`
     code: String
   }
   type Mutation {
-    createColor(task: ColorInput): Color
+    createColor(color: ColorInput): Color
     deleteColor(id: ID): String
-    updateColor(id: ID, task: ColorInput): Color
+    updateColor(id: ID, color: ColorInput): Color
   }
 `;
 
