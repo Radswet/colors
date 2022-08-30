@@ -1,4 +1,4 @@
 # Colors
-Cosita para ver colores bonitos en deno
+Api graphql conectada a mongodb atlas
 
-[link](https://radswet-colors-deno.deno.dev/)
+[API](https://colors-manager.herokuapp.com/api)
